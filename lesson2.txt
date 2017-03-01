@@ -1,0 +1,14 @@
+n = int(input()) m = int(input()) k = int(input()) if n * m <= k:
+    print("NO") elif k % n == 0 or k % m == 0:
+    print("YES") else:
+    print("NO")
+
+N = int(input()) M = int(input()) x = int(input()) y = int(input()) if N 
+< M:
+    N = N + M
+    M = N - M
+    N = N - M if x > M/2:
+    x = M-x if y > N/2:
+    y = N-y if x < y:
+    print(x) else:
+    print(y)
