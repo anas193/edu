@@ -1,0 +1,7 @@
+x = float(input()) if x == 0 or x % 30 == 0:
+    print(x // 30, 0, 0) else:
+    print(x // 30, (x%30*12)//1//6, int((x%30%1) * 120)%60)
+
+P = int(input()) X = int(input()) Y = int(input()) t = 
+(X*100+Y)*P/100+(X*100+Y)
+print(t // 100, int(t % 100))
