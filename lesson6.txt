@@ -1,0 +1,16 @@
+x = int(input()) n = 0 e = 0 p = -1 while x != 0:
+    if p == x:
+        n += 1
+    else:
+        p = x
+        e = max(e, n)
+        n = 1
+    x = int(input()) e = max(e, n) print(e)
+
+
+from math import * x = int(input()) s = 0 n = 0 sk = 0 while x != 0:
+    sk += x ** 2
+    s += x
+    n += 1
+    x = int(input()) sr = s / n b = sqrt((sk - 2 * sr * s + n * sr ** 2) 
+/ (n - 1)) print(b)
